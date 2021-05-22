@@ -186,6 +186,7 @@ class WebServer:
 
         resp = bytes()
         paramsError = False
+        params = {}
         try:
             params = json.loads(req.body.decode('utf-8'))
         except ValueError:
